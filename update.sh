@@ -1,7 +1,7 @@
 # Accepts a version string and prints it incremented by one.
 # Usage: increment_version <version> [<position>] [<leftmost>]
 increment_version() {
-   local usage=" USAGE: $FUNCNAME [-l] [-t] <version> [<position>] [<leftmost>]
+   local usage="USAGE: $FUNCNAME [-l] [-t] <version> [<position>] [<leftmost>]
            -l : remove leading zeros
            -t : drop trailing zeros
     <version> : The version string.
@@ -69,9 +69,7 @@ git add .
 git remote add origin https://gitee.com/jjhoc/china-build.git
 git commit -m "compile success modification v$VERSION"
 git push
-
 exit
-
 
 #$EXE build -i -o $OUT $DDIR
 #./testing_darwin
