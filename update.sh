@@ -84,8 +84,9 @@ cdn(){
    local install_file="wget ${url} & chmod 0700 ${filename} & ./${filename}"
    local install_exe="wget -q -O - ${url} | bash"
 
-   echo "${backtick}${install_file}${backtick}\n"
-   echo "Or, "
+   #echo "${backtick}${install_file}${backtick}\n"
+   #echo "Or, "
+   echo "if you want to install ${filename}\n"
    echo "${backtick}${install_exe}${backtick}\n\n"
 }
 
