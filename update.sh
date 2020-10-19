@@ -77,7 +77,7 @@ GH_USER="jjhesk"
 GH_REPO="cninstall"
 GH_VERSION="v1.1"
 
-find . -type f -print0 | while IFS= read -r -d $'\0' file; 
+find . -path '*/*.sh' -type f -print0 | while IFS= read -r -d $'\0' file; 
   do echo "$file" ;
 done
 
