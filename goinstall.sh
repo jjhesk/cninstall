@@ -4,7 +4,7 @@ set -e
 
 VERSION="1.15.2"
 MIRROR_GOOGLE="https://storage.googleapis.com/golang"
-MIRROR_CHINA="https://studygolang.com/dl/golang/"
+MIRROR_CHINA="https://studygolang.com/dl/golang"
 [ -z "$GOROOT" ] && GOROOT="$HOME/.go"
 [ -z "$GOPATH" ] && GOPATH="$HOME/go"
 
@@ -119,7 +119,7 @@ echo "Downloading $PACKAGE_NAME ..."
 if hash wget 2>/dev/null; then
     wget "$MIRROR_CHINA/$PACKAGE_NAME" -O "$TEMP_DIRECTORY/go.tar.gz"
 else
-    curl -o "$TEMP_DIRECTORY/go.tar.gz" https://storage.googleapis.com/golang/$PACKAGE_NAME
+    curl -o "$TEMP_DIRECTORY/go.tar.gz" "$MIRROR_CHINA/$PACKAGE_NAME"
 fi
 
 if [ $? -ne 0 ]; then
