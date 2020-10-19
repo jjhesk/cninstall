@@ -1,7 +1,7 @@
 
 # China CDN install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.71
+Latest Version: v1.4.72
 
 ## The collection of system tools for your linux build
 
@@ -18,37 +18,37 @@ Download and run with `wget` or `curl`. Here's the short version using the offic
 
 if you want to install brewinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/brewinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/brewinstall.sh | bash`
 
 
 if you want to install ccinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/ccinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/ccinstall.sh | bash`
 
 
 if you want to install goinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/goinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/goinstall.sh | bash`
 
 
 if you want to install ngrok.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/ngrok.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/ngrok.sh | bash`
 
 
 if you want to install nvminstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/nvminstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/nvminstall.sh | bash`
 
 
 if you want to install pip_mirror.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/pip_mirror.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/pip_mirror.sh | bash`
 
 
 if you want to install solditytools.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/solditytools.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/solditytools.sh | bash`
 
 ## Also install the listed applications for notifications
 yum -y install iptables
