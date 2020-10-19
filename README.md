@@ -1,7 +1,7 @@
 
 # China CDN install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.72
+Latest Version: v1.4.73
 
 ## The collection of system tools for your linux build
 
@@ -51,11 +51,11 @@ if you want to install solditytools.sh
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/solditytools.sh | bash`
 
 ## Also install the listed applications for notifications
-yum -y install iptables
+`yum -y install iptables`
 
-yum -y install sendmail
+`yum -y install sendmail`
 
-yum install -y mailx
+`yum install -y mailx`
 
 ### Tested working on:
 

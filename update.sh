@@ -128,11 +128,11 @@ Download and run with ${b}wget${b} or ${b}curl${b}. Here's the short version usi
 $(listfiles)
 
 ## Also install the listed applications for notifications
-yum -y install iptables
+${b}yum -y install iptables${b}
 
-yum -y install sendmail
+${b}yum -y install sendmail${b}
 
-yum install -y mailx
+${b}yum install -y mailx${b}
 
 ### Tested working on:
 
