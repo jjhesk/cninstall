@@ -1,7 +1,7 @@
 
 # China CDN install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.73
+Latest Version: v1.4.74
 
 ## The collection of system tools for your linux build
 
@@ -31,9 +31,9 @@ if you want to install goinstall.sh
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/goinstall.sh | bash`
 
 
-if you want to install ngrok.sh
+if you want to install ngrokinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/ngrok.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/ngrokinstall.sh | bash`
 
 
 if you want to install nvminstall.sh
@@ -41,9 +41,9 @@ if you want to install nvminstall.sh
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/nvminstall.sh | bash`
 
 
-if you want to install pip_mirror.sh
+if you want to install pip_mirror_setup.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/pip_mirror.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.71/pip_mirror_setup.sh | bash`
 
 
 if you want to install solditytools.sh
