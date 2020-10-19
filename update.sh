@@ -67,6 +67,7 @@ increment_version $VERSION > version
 echo $VERSION
 git add .
 git remote add origin https://gitee.com/jjhoc/china-build.git
+git remote add github https://github.com/jjhesk/cninstall.git
 git commit -m "compile success modification v$VERSION"
 git push
 
