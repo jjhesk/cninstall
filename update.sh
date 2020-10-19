@@ -79,10 +79,14 @@ cdn(){
    fi;
    local q="'"
    local qq='"'
-   local backticks='`'
+   local backtick='`'
    local url="https://cdn.jsdelivr.net/gh/$GH_USER/$GH_REPO@$GH_VERSION/$filename"
-   local install="wget ${url} & chmod 0700 ${filename} & ./${filename}"
-   echo "${backticks}$install${backticks}\n\n"
+   local install_file="wget ${url} & chmod 0700 ${filename} & ./${filename}"
+   local install_exe="wget -q -O - ${url} | bash"
+
+   echo "${backtick}${install_file}${backtick}\n"
+   echo "Or, "
+   echo "${backtick}${install_exe}${backtick}\n\n"
 }
 
 bumpVer(){
@@ -101,11 +105,21 @@ gitremotecommit(){
 }
 writedereadmefile() {
   cat <<EOF >README.md
-#Tools:
+
+# China CDN install [![Build Status](https://travis-ci.org/canha/$GH_REPO.svg?branch=master)](https://travis-ci.org/canha/$GH_REPO)
 
 ## The collection of system tools for your linux build
 
-check for any of the working installation one line script
+## :hammer: Requirements
+* `wget` or `curl`
+* Bash shell
+
+## :fast_forward: Install
+
+Download and run with `wget` or `curl`. Here's the short version using the official git.io shortening:
+
+
+### Check for any of the working installation one line script
 
 $(listfiles)
 
@@ -115,6 +129,11 @@ yum -y install iptables
 yum -y install sendmail
 
 yum install -y mailx
+
+Tested working on:
+
+* :white_check_mark: Ubuntu 16.04 to 18.04
+* :white_check_mark: macOS Sierra (10.12) to Catalina (10.15)
 
 EOF
 }
