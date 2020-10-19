@@ -1,6 +1,8 @@
 
 # China CDN install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
+Latest Version: v1.4.71
+
 ## The collection of system tools for your linux build
 
 ## :hammer: Requirements

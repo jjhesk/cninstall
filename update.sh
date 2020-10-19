@@ -110,6 +110,8 @@ cat <<EOF >README.md
 
 # China CDN install [![Build Status](https://travis-ci.org/canha/$GH_REPO.svg?branch=master)](https://travis-ci.org/canha/$GH_REPO)
 
+Latest Version: v$(cat version)
+
 ## The collection of system tools for your linux build
 
 ## :hammer: Requirements
