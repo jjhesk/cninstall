@@ -71,6 +71,19 @@ git remote add github https://github.com/jjhesk/cninstall.git
 git commit -m "compile success modification v$VERSION"
 git push origin master
 git push github master -ff
+
+
+GH_USER="jjhesk"
+GH_REPO="cninstall"
+GH_VERSION="v1.1"
+
+find . -type f -print0 | while IFS= read -r -d $'\0' file; 
+  do echo "$file" ;
+done
+
+echo "https://cdn.jsdelivr.net/gh/$GH_USER/$GH_REPO@version/file"
+
+echo "https://cdn.jsdelivr.net/gh/jjhesk/cninstall@genesis/file"
 #$EXE build -i -o $OUT $DDIR
 #./testing_darwin
 echo "now upload the files to gitee"
