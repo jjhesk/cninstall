@@ -16,42 +16,42 @@ Download and run with `wget` or `curl`. Here's the short version using the offic
 
 if you want to install brewinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/brewinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/brewinstall.sh | bash`
 
 
 if you want to install brewinstall2.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/brewinstall2.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/brewinstall2.sh | bash`
 
 
 if you want to install ccinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/ccinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/ccinstall.sh | bash`
 
 
 if you want to install goinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/goinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/goinstall.sh | bash`
 
 
 if you want to install ngrok.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/ngrok.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/ngrok.sh | bash`
 
 
 if you want to install nvminstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/nvminstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/nvminstall.sh | bash`
 
 
 if you want to install pip_mirror.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/pip_mirror.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/pip_mirror.sh | bash`
 
 
 if you want to install solditytools.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/solditytools.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/solditytools.sh | bash`
 
 ## Also install the listed applications for notifications
 yum -y install iptables
