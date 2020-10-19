@@ -19,11 +19,6 @@ if you want to install brewinstall.sh
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/brewinstall.sh | bash`
 
 
-if you want to install brewinstall2.sh
-
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/brewinstall2.sh | bash`
-
-
 if you want to install ccinstall.sh
 
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.21/ccinstall.sh | bash`
