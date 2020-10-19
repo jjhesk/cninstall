@@ -1,3 +1,4 @@
+# /usr/local/bin/bash
 # Accepts a version string and prints it incremented by one.
 # Usage: increment_version <version> [<position>] [<leftmost>]
 increment_version() {
@@ -62,35 +63,53 @@ increment_version() {
    return 0
 }
 
-VERSION=$(cat version)
-increment_version $VERSION > version
-echo $VERSION
-git add .
-git remote add origin https://gitee.com/jjhoc/china-build.git
-git remote add github https://github.com/jjhesk/cninstall.git
-git commit -m "compile success modification v$VERSION"
-git push origin master
-git push github master -ff
+listfiles(){
+   shopt -s globstar
+   for file in **; do cdn ${file##*/}; done
+}
+
+cdn(){
+   local filename=$1
+   echo "https://cdn.jsdelivr.net/gh/$GH_USER/$GH_REPO@$GH_VERSION/$filename"
+}
+
+bumpVer(){
+   VERSION=$(cat version)
+   increment_version $VERSION > version
+   echo $VERSION
+}
+
+gitremotecommit(){
+   git add .
+   git remote add origin https://gitee.com/jjhoc/china-build.git
+   git remote add github https://github.com/jjhesk/cninstall.git
+   git commit -m "compile success modification v$VERSION"
+   git push origin master
+   git push github master -ff
+}
+
+writedereadmefile() {
+  cat <<EOF >README.md
+#Tools:
+
+## The collection of system tools for your linux build
+
+${listfiles}
+
+EOF
+}
 
 
 GH_USER="jjhesk"
 GH_REPO="cninstall"
 GH_VERSION="v1.1"
+bumpVer
+writedereadmefile
+gitremotecommit
 
-find . -path '*/*.sh' -type f -print0 | while IFS= read -r -d $'\0' file; 
-  do echo "$file" ;
-done
 
-echo "https://cdn.jsdelivr.net/gh/$GH_USER/$GH_REPO@version/file"
+#find . -path '*/*.sh' -type f -print0 | while IFS= read -r -d $'\0' file; 
+#  do echo "$file" ;
+#done
 
-echo "https://cdn.jsdelivr.net/gh/jjhesk/cninstall@genesis/file"
-#$EXE build -i -o $OUT $DDIR
-#./testing_darwin
-echo "now upload the files to gitee"
-#go run -race $DDIR
-#go tool vet $DDIR
-#env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o $OUT -tags=gpu $DDIR
-#zip -r -q -o $UNZIP_FILE menoex
-#rm -r menoex
-#==========================
 echo "Final Pack Finish"
