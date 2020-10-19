@@ -79,9 +79,10 @@ cdn(){
    fi;
    local q="'"
    local qq='"'
+   local backticks='`'
    local url="https://cdn.jsdelivr.net/gh/$GH_USER/$GH_REPO@$GH_VERSION/$filename"
    local install="wget ${url} & chmod 0700 ${filename} & ./${filename}"
-   echo "${q}$install${q}\n\n"
+   echo "${backticks}$install${backticks}\n\n"
 }
 
 bumpVer(){
@@ -98,13 +99,7 @@ gitremotecommit(){
    git push origin master
    git push github master -ff
 }
-OUT=list.md
 writedereadmefile() {
-#cat <<EOF >$OUT
-#$(listfiles)
-#EOF
-
-
   cat <<EOF >README.md
 #Tools:
 
@@ -114,6 +109,12 @@ check for any of the working installation one line script
 
 $(listfiles)
 
+## Also install the listed applications for notifications
+yum -y install iptables
+
+yum -y install sendmail
+
+yum install -y mailx
 
 EOF
 }
