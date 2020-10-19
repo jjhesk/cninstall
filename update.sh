@@ -69,8 +69,8 @@ git add .
 git remote add origin https://gitee.com/jjhoc/china-build.git
 git remote add github https://github.com/jjhesk/cninstall.git
 git commit -m "compile success modification v$VERSION"
-git push origin
-git push github
+git push origin master
+git push github master
 #$EXE build -i -o $OUT $DDIR
 #./testing_darwin
 echo "now upload the files to gitee"
