@@ -64,13 +64,24 @@ increment_version() {
 }
 
 listfiles(){
-   shopt -s globstar
-   for file in **; do cdn ${file##*/}; done
+   filesList=(*.sh)
+   EXCLUDE=("!(update.sh)")
+   shopt -s nullglob
+   for file in "${filesList[@]}|${EXCLUDE[@]}"; do
+      cdn $file
+   done
 }
 
 cdn(){
    local filename=$1
-   echo "https://cdn.jsdelivr.net/gh/$GH_USER/$GH_REPO@$GH_VERSION/$filename"
+   if [ -z "$filename" ]; then
+      return 
+   fi;
+   local q="'"
+   local qq='"'
+   local url="https://cdn.jsdelivr.net/gh/$GH_USER/$GH_REPO@$GH_VERSION/$filename"
+   local install="wget ${url} & chmod 0700 ${filename} & ./${filename}"
+   echo "${q}$install${q}\n\n"
 }
 
 bumpVer(){
@@ -87,14 +98,22 @@ gitremotecommit(){
    git push origin master
    git push github master -ff
 }
-
+OUT=list.md
 writedereadmefile() {
+#cat <<EOF >$OUT
+#$(listfiles)
+#EOF
+
+
   cat <<EOF >README.md
 #Tools:
 
 ## The collection of system tools for your linux build
 
-${listfiles}
+check for any of the working installation one line script
+
+$(listfiles)
+
 
 EOF
 }
@@ -103,10 +122,11 @@ EOF
 GH_USER="jjhesk"
 GH_REPO="cninstall"
 GH_VERSION="v1.1"
-bumpVer
-writedereadmefile
-gitremotecommit
 
+writedereadmefile
+bumpVer
+gitremotecommit
+open README.md
 
 #find . -path '*/*.sh' -type f -print0 | while IFS= read -r -d $'\0' file; 
 #  do echo "$file" ;
