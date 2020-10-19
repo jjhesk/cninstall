@@ -105,19 +105,20 @@ gitremotecommit(){
    git push github master -ff
 }
 writedereadmefile() {
-  cat <<EOF >README.md
+local b='`'
+cat <<EOF >README.md
 
 # China CDN install [![Build Status](https://travis-ci.org/canha/$GH_REPO.svg?branch=master)](https://travis-ci.org/canha/$GH_REPO)
 
 ## The collection of system tools for your linux build
 
 ## :hammer: Requirements
-* `wget` or `curl`
+* ${b}wget${b} or ${b}curl${b}
 * Bash shell
 
 ## :fast_forward: Install
 
-Download and run with `wget` or `curl`. Here's the short version using the official git.io shortening:
+Download and run with ${b}wget${b} or ${b}curl${b}. Here's the short version using the official git.io shortening:
 
 
 ### Check for any of the working installation one line script
@@ -131,10 +132,22 @@ yum -y install sendmail
 
 yum install -y mailx
 
-Tested working on:
+### Tested working on:
 
 * :white_check_mark: Ubuntu 16.04 to 18.04
 * :white_check_mark: macOS Sierra (10.12) to Catalina (10.15)
+
+### Other related installations:
+
+${b}bash <(curl -Ss https://my-netdata.io/kickstart.sh)${b}
+
+### BT Installation
+
+${b}yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh${b}
+
+### Auto disk
+
+${b}yum install wget -y && wget -O auto_disk.sh http://download.bt.cn/tools/auto_disk.sh && bash auto_disk.sh${b}
 
 EOF
 }

@@ -4,12 +4,12 @@
 ## The collection of system tools for your linux build
 
 ## :hammer: Requirements
-*  or 
+* `wget` or `curl`
 * Bash shell
 
 ## :fast_forward: Install
 
-Download and run with  or . Here's the short version using the official git.io shortening:
+Download and run with `wget` or `curl`. Here's the short version using the official git.io shortening:
 
 
 ### Check for any of the working installation one line script
@@ -22,6 +22,11 @@ if you want to install brewinstall.sh
 if you want to install brewinstall2.sh
 
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/brewinstall2.sh | bash`
+
+
+if you want to install ccinstall.sh
+
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.1/ccinstall.sh | bash`
 
 
 if you want to install goinstall.sh
@@ -55,8 +60,20 @@ yum -y install sendmail
 
 yum install -y mailx
 
-Tested working on:
+### Tested working on:
 
 * :white_check_mark: Ubuntu 16.04 to 18.04
 * :white_check_mark: macOS Sierra (10.12) to Catalina (10.15)
+
+### Other related installations:
+
+`bash <(curl -Ss https://my-netdata.io/kickstart.sh)`
+
+### BT Installation
+
+`yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh`
+
+### Auto disk
+
+`yum install wget -y && wget -O auto_disk.sh http://download.bt.cn/tools/auto_disk.sh && bash auto_disk.sh`
 
