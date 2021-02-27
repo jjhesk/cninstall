@@ -1,7 +1,7 @@
 
 # China CDN install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.76
+Latest Version: v1.4.77
 
 ## The collection of system tools for your linux build
 
@@ -18,42 +18,42 @@ Download and run with `wget` or `curl`. Here's the short version using the offic
 
 if you want to install brewinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/brewinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.81/brewinstall.sh | bash`
 
 
 if you want to install ccinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/ccinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.81/ccinstall.sh | bash`
 
 
 if you want to install fmzrobot.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/fmzrobot.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.81/fmzrobot.sh | bash`
 
 
 if you want to install goinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/goinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.81/goinstall.sh | bash`
 
 
 if you want to install ngrokinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/ngrokinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.81/ngrokinstall.sh | bash`
 
 
 if you want to install nvminstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/nvminstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.81/nvminstall.sh | bash`
 
 
 if you want to install pip_mirror_setup.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/pip_mirror_setup.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.81/pip_mirror_setup.sh | bash`
 
 
 if you want to install solditytools.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/solditytools.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.81/solditytools.sh | bash`
 
 ## Also install the listed applications for notifications
 `yum -y install iptables`

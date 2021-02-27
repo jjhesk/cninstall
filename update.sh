@@ -157,7 +157,7 @@ EOF
 
 GH_USER="jjhesk"
 GH_REPO="cninstall"
-GH_VERSION="v1.4.74"
+GH_VERSION="v1.4.81"
 
 writedereadmefile
 bumpVer
@@ -169,3 +169,7 @@ open README.md
 #done
 
 echo "Final Pack Finish"
+
+
+
+
