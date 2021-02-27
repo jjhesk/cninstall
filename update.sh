@@ -107,8 +107,8 @@ gitremotecommit(){
 writedereadmefile() {
 local b='`'
 cat <<EOF >README.md
-
-# China CDN install [![Build Status](https://travis-ci.org/canha/$GH_REPO.svg?branch=master)](https://travis-ci.org/canha/$GH_REPO)
+# [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
+# Console Tools Install [![Build Status](https://travis-ci.org/canha/$GH_REPO.svg?branch=master)](https://travis-ci.org/canha/$GH_REPO)
 
 Latest Version: v$(cat version)
 
