@@ -1,7 +1,7 @@
 
 # China CDN install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.75
+Latest Version: v1.4.76
 
 ## The collection of system tools for your linux build
 
@@ -24,6 +24,11 @@ if you want to install brewinstall.sh
 if you want to install ccinstall.sh
 
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/ccinstall.sh | bash`
+
+
+if you want to install fmzrobot.sh
+
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.4.74/fmzrobot.sh | bash`
 
 
 if you want to install goinstall.sh
