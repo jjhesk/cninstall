@@ -2,7 +2,7 @@
 # shellcheck disable=SC2016
 set -e
 
-VERSION="1.15.5"
+VERSION="1.16.6"
 MIRROR_GOOGLE="https://storage.googleapis.com/golang"
 MIRROR_CHINA="https://studygolang.com/dl/golang"
 [ -z "$GOROOT" ] && GOROOT="$HOME/.go"
