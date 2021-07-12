@@ -1,7 +1,7 @@
 # [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
 # Console Tools Install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.85
+Latest Version: v1.4.86
 
 ## The collection of system tools for your linux build
 
@@ -83,7 +83,15 @@ if you want to install solditytools.sh
 
 ### BT Installation
 
+#### CENTOS
+
 `yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh`
+
+#### UBUNTU
+
+`wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh`
+
+
 
 ### Auto disk
 

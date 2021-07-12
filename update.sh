@@ -145,7 +145,15 @@ ${b}bash <(curl -Ss https://my-netdata.io/kickstart.sh)${b}
 
 ### BT Installation
 
+#### CENTOS
+
 ${b}yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh${b}
+
+#### UBUNTU
+
+${b}wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh${b}
+
+
 
 ### Auto disk
 
