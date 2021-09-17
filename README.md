@@ -1,7 +1,7 @@
 # [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
 # Console Tools Install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.86
+Latest Version: v1.4.87
 
 ## The collection of system tools for your linux build
 
@@ -59,11 +59,6 @@ if you want to install nvminstall.sh
 if you want to install pip_mirror_setup.sh
 
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/pip_mirror_setup.sh | bash`
-
-
-if you want to install solditytools.sh
-
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/solditytools.sh | bash`
 
 ## Also install the listed applications for notifications
 `yum -y install iptables`

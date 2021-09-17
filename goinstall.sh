@@ -2,7 +2,7 @@
 # shellcheck disable=SC2016
 set -e
 
-VERSION="1.16.6"
+VERSION="1.17.1"
 MIRROR_GOOGLE="https://storage.googleapis.com/golang"
 MIRROR_CHINA="https://studygolang.com/dl/golang"
 [ -z "$GOROOT" ] && GOROOT="$HOME/.go"
@@ -148,6 +148,7 @@ else
         echo 'export PATH=$GOROOT/bin:$PATH'
         echo "export GOPATH=$GOPATH"
         echo 'export PATH=$GOPATH/bin:$PATH'
+        echo 'export GOPROXY=https://goproxy.io,direct'
     } >> "$shell_profile"
 fi
 
