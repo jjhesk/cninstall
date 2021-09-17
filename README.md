@@ -1,7 +1,7 @@
 # [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
 # Console Tools Install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.87
+Latest Version: v1.4.88
 
 ## The collection of system tools for your linux build
 
@@ -18,47 +18,47 @@ Download and run with `wget` or `curl`. Here's the short version using the offic
 
 if you want to install brewinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/brewinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/brewinstall.sh | bash`
 
 
 if you want to install bt_patch.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/bt_patch.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/bt_patch.sh | bash`
 
 
 if you want to install ccinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/ccinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/ccinstall.sh | bash`
 
 
 if you want to install chiaminersetup.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/chiaminersetup.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/chiaminersetup.sh | bash`
 
 
 if you want to install fmzrobot.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/fmzrobot.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/fmzrobot.sh | bash`
 
 
 if you want to install goinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/goinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/goinstall.sh | bash`
 
 
 if you want to install ngrokinstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/ngrokinstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/ngrokinstall.sh | bash`
 
 
 if you want to install nvminstall.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/nvminstall.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/nvminstall.sh | bash`
 
 
 if you want to install pip_mirror_setup.sh
 
-`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@v1.5.101/pip_mirror_setup.sh | bash`
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/pip_mirror_setup.sh | bash`
 
 ## Also install the listed applications for notifications
 `yum -y install iptables`

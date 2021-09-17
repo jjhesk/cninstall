@@ -165,7 +165,7 @@ EOF
 
 GH_USER="jjhesk"
 GH_REPO="cninstall"
-GH_VERSION="v1.5.101"
+GH_VERSION="rc1.5.103"
 
 writedereadmefile
 bumpVer
