@@ -1,7 +1,7 @@
-# [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
+# [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge?style=rounded)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
 # Console Tools Install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.88
+Latest Version: v1.4.89
 
 ## The collection of system tools for your linux build
 

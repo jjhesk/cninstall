@@ -107,7 +107,7 @@ gitremotecommit(){
 writedereadmefile() {
 local b='`'
 cat <<EOF >README.md
-# [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
+# [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge?style=rounded)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
 # Console Tools Install [![Build Status](https://travis-ci.org/canha/$GH_REPO.svg?branch=master)](https://travis-ci.org/canha/$GH_REPO)
 
 Latest Version: v$(cat version)
