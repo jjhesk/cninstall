@@ -1,5 +1,16 @@
 #!/bin/sh
 clear
+yum install rsync
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    echo -e "${new// /.}"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    echo "${new// /.}"
+elif [[ "$OSTYPE" == "cygwin" ]]; then
+    echo "not correct system - cygwin detected"
+    exit
+fi
+
 pip3 install solc-select
 pip3 install slither-analyzer
 
@@ -35,3 +46,8 @@ solc-select install 0.8.4
 solc-select install 0.8.5
 solc-select install 0.8.6
 solc-select install 0.8.7
+solc-select install 0.8.12
+
+solc-select versions
+
+SOLC_VERSION=0.5.7 solc
