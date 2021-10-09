@@ -1,7 +1,7 @@
 # [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge?style=rounded)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
 # Console Tools Install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.91
+Latest Version: v1.4.92
 
 ## The collection of system tools for your linux build
 
@@ -29,6 +29,11 @@ if you want to install bt_patch.sh
 if you want to install ccinstall.sh
 
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/ccinstall.sh | bash`
+
+
+if you want to install chainlink.sh
+
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/chainlink.sh | bash`
 
 
 if you want to install chiaminersetup.sh
