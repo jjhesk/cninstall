@@ -1,7 +1,7 @@
 # [![](https://data.jsdelivr.com/v1/package/gh/jjhesk/cninstall/badge?style=rounded)](https://www.jsdelivr.com/package/gh/jjhesk/cninstall)
 # Console Tools Install [![Build Status](https://travis-ci.org/canha/cninstall.svg?branch=master)](https://travis-ci.org/canha/cninstall)
 
-Latest Version: v1.4.93
+Latest Version: v1.4.94
 
 ## The collection of system tools for your linux build
 
@@ -71,6 +71,11 @@ if you want to install pip3install.sh
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/pip3install.sh | bash`
 
 
+if you want to install pip3sourcebuild.sh
+
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/pip3sourcebuild.sh | bash`
+
+
 if you want to install pip_mirror_setup.sh
 
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/pip_mirror_setup.sh | bash`
@@ -79,6 +84,11 @@ if you want to install pip_mirror_setup.sh
 if you want to install postsql13install.sh
 
 `wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/postsql13install.sh | bash`
+
+
+if you want to install postsql13install8.sh
+
+`wget -q -O - https://cdn.jsdelivr.net/gh/jjhesk/cninstall@rc1.5.103/postsql13install8.sh | bash`
 
 
 if you want to install solditytools.sh

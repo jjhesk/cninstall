@@ -42,12 +42,17 @@ sudo dnf -qy module disable postgresql
 # Install PostgreSQL:
 sudo dnf install -y postgresql13-server
 yum install -y postgresql13-server postgresql13-contrib postgresql13-devel
+#apt install -y postgresql14-server postgresql14-contrib postgresql14-devel
 # Optionally initialize the database and enable automatic start:
 sudo /usr/pgsql-13/bin/postgresql-13-setup initdb
 sudo systemctl enable postgresql-13
 sudo systemctl start postgresql-13
-sudo su - postgres -c "createuser -s graphicaltester1"
+sudo systemctl status postgresql-13
+
 sudo -u postgres psql
+
+
+
 #ALTER USER postgres WITH PASSWORD 'ffex123rr';
 ALTER USER graphicaltester1 WITH PASSWORD 'ffex123rr';
 
@@ -73,19 +78,17 @@ sudo -u postgres psql -c "CREATE DATABASE graphicalnode99;"
 sudo -u postgres psql -c "CREATE ROLE admin WITH SUPERUSER CREATEDB CREATEROLE LOGIN PASSWORD 'ffex123rr';"
 
 #\c graphicalnode99
-sudo -u postgres psql -d graphicalnode99 -c "CREATE EXTENSION pg_trgm;"
-sudo -u postgres psql -d graphicalnode99 -c "CREATE EXTENSION pg_stat_statements;"
-sudo -u postgres psql -d graphicalnode99 -c "CREATE EXTENSION btree_gist;"
-sudo -u postgres psql -d graphicalnode99 -c "CREATE EXTENSION postgres_fdw;"
-sudo -u postgres psql -d graphicalnode99 -c "grant usage on foreign data wrapper postgres_fdw to graphuser"
 
-#create extension pg_trgm;
-#create extension pg_stat_statements;
-#create extension btree_gist;
-#create extension postgres_fdw;
 #CREATE ROLE admin WITH CREATEDB CREATEROLE LOGIN PASSWORD 'ffex123rr' ;
-#CREATE ROLE graphuser WITH CREATEDB CREATEROLE LOGIN PASSWORD 'ffex123rr' ;
-#grant usage on foreign data wrapper postgres_fdw to graphuser;
+CREATE EXTENSION pg_trgm;
+CREATE EXTENSION pg_stat_statements;
+CREATE EXTENSION btree_gist;
+CREATE EXTENSION postgres_fdw;
+CREATE ROLE graphuser WITH CREATEDB CREATEROLE LOGIN PASSWORD 'ffex123rr' ;
+GRANT CONNECT ON DATABASE graphicalnode99 TO graphuser;
+GRANT ALL PRIVILEGES ON DATABASE graphicalnode99 TO graphuser;
+GRANT USAGE ON FOREIGN DATA WRAPPER postgres_fdw TO graphuser;
+ALTER ROLE graphuser WITH PASSWORD 'ffex123rr';
 
 sudo -u postgres psql -c "ALTER ROLE graphuser WITH PASSWORD 'ffex123rr';"
 
@@ -97,7 +100,7 @@ tee $HOME/graph-startup.sh<<EOF
 
 #!/bin/bash
 source $HOME/.cargo/env
-cd $HOME/graph-node-0.25.0
+cd /home/richex/graph-node
 
 cargo run -p graph-node --release -- \\
   --postgres-url postgresql://graphuser:ffex123rr@localhost:5432/graphicalnode99 \\
@@ -106,6 +109,7 @@ cargo run -p graph-node --release -- \\
   --ipfs 127.0.0.1:5001
 
 EOF
+
 
 chmod +x $HOME/graph-startup.sh
 
@@ -125,7 +129,7 @@ StandardError=journal
 Type=simple
 Restart=always
 RestartSec=5
-ExecStart= /home/user/graph-startup.sh
+ExecStart=/home/user/graph-startup.sh
 
 [Install]
 WantedBy=default.target
@@ -136,8 +140,6 @@ EOF
 sudo systemctl daemon-reload
 #Start the graph-node service
 sudo systemctl start graphindexer.service
-
-
 
 
 
